@@ -1,0 +1,22 @@
+fn = str(input("Enter a filename with extension: "))
+a = 1
+b = len(fn)
+for i in fn:
+    if fn[a]=='.':
+        s = fn[a:b]
+        a += 1
+    break
+if s=='.py':
+    print("The file is python.")
+elif s=='.docx' or s=='.doc':
+    print("The file is word.")
+elif s=='.pptx' or s=='.ppt':
+    print("The file is powerpoint.")
+elif s=='.xlsx' or s=='.xls':
+    print("The file is excel.")
+elif s=='.pdf':
+    print("The file is PDF.")
+elif s=='.jpg' or s=='.jpeg' or s=='.png':
+    print("The file is image.")
+else:
+    print("File extension unknown.")
