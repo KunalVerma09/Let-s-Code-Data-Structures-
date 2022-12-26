@@ -4,8 +4,8 @@ b = len(fn)
 for i in fn:
     if fn[a]=='.':
         s = fn[a:b]
+        break
         a += 1
-    break
 if s=='.py':
     print("The file is python.")
 elif s=='.docx' or s=='.doc':
